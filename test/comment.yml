@@ -1,0 +1,6 @@
+id: Integer
+content: String
+user:
+  type: SingleObject
+  kclass: User
+created_at: Time

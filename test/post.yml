@@ -1,0 +1,18 @@
+id: Integer
+title: String
+user:
+  type: SingleObject
+  kclass: User
+comments:
+  type: Array
+  kclass: Comment
+meta:
+  type: Hash
+  keys:
+    description: String
+    url: String
+tags:
+  type: Array
+  kclass: String
+created_at: Time
+published: Boolean

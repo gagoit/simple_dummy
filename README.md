@@ -4,14 +4,14 @@ Generate dummy data for testing
 # Real Problem
 Sometimes you will work with other system via their APIs, calling their APIs from your backend, and display this data to your end user. You have been provided an APIs specification that describes the response JSON structure (fields and types), and maybe they also have a Ruby gem that wrapper their APIs response into Ruby objects... That's so great. 
 
-But that APIs can be not avaiable at this time you develop your backend, so it can affect to your project's schedule. 
+But that APIs can be not avaiable at this time you develop your backend, so it can affect to your project's schedule.   
 => You have to fake some data in your backend that have structure like the response of APIs.
 
 # Usage
 See test.rb(https://github.com/gagoit/simple_dummy/blob/master/test/test.rb) for more detail.
 
 ## Support types:
-SIMPLE_TYPES = ["Integer", "Float", "Boolean", "String", "Time", "Date"]
+SIMPLE_TYPES = ["Integer", "Float", "Boolean", "String", "Time", "Date"]  
 SPECIAL_TYPES = ["Array", "SingleObject", "Hash"]
 
 - SingleObject: can be another object..
@@ -94,7 +94,7 @@ end
 ```
 
 ## Config the associations:
-You can config the name, number of objects, and the structure file location of each association. Like
+You can config the name, number of objects, and the structure file location of each association. Like:
 ``` ruby
 data = SimpleDummy.new("post", 2, {
   filename_with_path: "test/post.yml", 
